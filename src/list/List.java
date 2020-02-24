@@ -26,6 +26,21 @@ public class List {
                     "-------- * -------- * -------- * --------");
         }
     }
+    public void delete(){
+        System.out.println("Here are all your contacts:");
+        int c=1;
+        String name=null;
+        for(Person i:per){
+            System.out.println(c + "."+i.getFirst_name()+" "+i.getLast_name());
+            c++;
+            name=i.getFirst_name()+" "+i.getLast_name();
+        }
+        System.out.print("Press the number against the contact to delete it: ");
+        int i=sc.nextInt();
+        System.out.println(i);
+        per.remove(i-1);
+        System.out.println(name +" contact deleted from list!");
+
 
     }
 
