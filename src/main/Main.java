@@ -16,51 +16,6 @@ public class Main {
                 "Press 4 to delete a contact\n" +
                 "Press 5 to exit program ");
 
-        while(true){
-            int i =sc.nextInt();
-            switch (i){
-                case 1:
-                    l.add();
-                    System.out.println("Press 1 to add a new contact\n" +
-                            "Press 2 to view all contacts\n" +
-                            "Press 3 to search for a contact\n" +
-                            "Press 4 to delete a contact\n" +
-                            "Press 5 to exit program ");
-                    break;
-                case 2:
-                    l.view();
-                    System.out.println("Press 1 to add a new contact\n" +
-                            "Press 2 to view all contacts\n" +
-                            "Press 3 to search for a contact\n" +
-                            "Press 4 to delete a contact\n" +
-                            "Press 5 to exit program ");
-                    break;
-                case 3:
-                    l.search();
-                    System.out.println("Press 1 to add a new contact\n" +
-                            "Press 2 to view all contacts\n" +
-                            "Press 3 to search for a contact\n" +
-                            "Press 4 to delete a contact\n" +
-                            "Press 5 to exit program ");
-                    break;
-                case 4:
-                    System.out.println("delete program");
-                    l.delete();
-                    System.out.println("Press 1 to add a new contact\n" +
-                            "Press 2 to view all contacts\n" +
-                            "Press 3 to search for a contact\n" +
-                            "Press 4 to delete a contact\n" +
-                            "Press 5 to exit program ");
-                    break;
-                default:
-                    System.out.println("Please Enter a Valid Key");
-
-            }
-            if(i==5){
-                break;
-            }
-        }
-
 
     }
 }
