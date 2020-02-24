@@ -43,6 +43,26 @@ public class List {
 
 
     }
+    public void search(){
+        System.out.println("You could search for a contact from their first names: ");
+        String s=sc.nextLine();
+        int c1=0;
+        for(Person i:per){
+            if(s.equalsIgnoreCase(i.getFirst_name())) {
+                c1++; }
+        }
+        System.out.println(c1+" match found!");
+        System.out.println("-------- * -------- * -------- * --------");
+        for(Person i:per){
+            if(s.equalsIgnoreCase(i.getFirst_name())){
+                System.out.println("First Name: "+i.getFirst_name()+"\n"+"Last Name: "+i.getLast_name()+"\n"+"Contact Number(s): "+i.getContact_number()+"\n"+"Email address:"+i.getEmail_id());
+                System.out.println("-------- * -------- * -------- * --------");
+            }
+
+
+
+        }
+    }
 
 
 }
